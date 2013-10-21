@@ -9,7 +9,7 @@
 
 
     <bean name="/engine.htm" class="com.mradling.camundaspring.EngineController">
-        <property name="runtimeService" ref="runtimeService" />
+<!--         <property name="runtimeService" ref="runtimeService" /> -->
     </bean>
 
     <bean id="viewResolver"

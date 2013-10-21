@@ -22,11 +22,18 @@
             <groupId>org.camunda.bpm</groupId>
             <artifactId>camunda-engine</artifactId>
             <version>${camundabpm.version}</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.camunda.bpm</groupId>
             <artifactId>camunda-engine-spring</artifactId>
             <version>${camundabpm.version}</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>spring-jdbc</artifactId>
+                    <groupId>org.springframework</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>

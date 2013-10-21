@@ -4,7 +4,7 @@
 	<target name="package">
 		<exec executable="cmd">
 			<arg value="/C" />
-			<arg value="mvn package" />
+			<arg value="mvn clean package" />
 		</exec>
 	</target>
     

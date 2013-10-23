@@ -1,2 +1,0 @@
-1) download camunda bpm platform
-2) add '<ResourceLink global="jdbc/ProcessEngine" name="jdbc/ProcessEngine"/>' to context.xml in Tomcat conf/

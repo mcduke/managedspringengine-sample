@@ -3,6 +3,9 @@
  */
 package com.mradling.camundaspring;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;
 
@@ -18,6 +21,7 @@ public class SimpleServiceTaskDelegate implements JavaDelegate {
      * @see org.camunda.bpm.engine.delegate.JavaDelegate#execute(org.camunda.bpm.engine.delegate.DelegateExecution)
      */
     public void execute(DelegateExecution execution) throws Exception {
+        execution.setVariable("PROCVAR", "Hello from servicetask!(" + new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(new Date()) + ")");
         System.out.println("SERVICE TASK, id=" + execution.getId());
     }
 

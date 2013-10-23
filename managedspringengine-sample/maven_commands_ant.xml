@@ -8,4 +8,11 @@
 		</exec>
 	</target>
     
+    <target name="install">
+        <exec executable="cmd">
+            <arg value="/C" />
+            <arg value="mvn clean install" />
+        </exec>
+    </target>
+    
 </project>

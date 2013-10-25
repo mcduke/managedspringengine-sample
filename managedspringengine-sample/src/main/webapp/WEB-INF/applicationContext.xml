@@ -8,7 +8,7 @@
                            http://www.springframework.org/schema/context/spring-context-2.5.xsd" >
  
     
-    <bean id="processApplication" class="org.camunda.bpm.engine.spring.application.SpringProcessApplication" />
+    <bean id="processApplication" class="org.camunda.bpm.engine.spring.application.SpringServletProcessApplication" />
 
     <bean name="processEngineService" class="org.camunda.bpm.BpmPlatform"
         factory-method="getProcessEngineService" />
